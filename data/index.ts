@@ -1,24 +1,26 @@
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Projects", link: "#recentprojects" },
+  { name: "Work", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "I design, optimize, and scale it for real-world applications. My passion lies in creating technology that works smarter, not harder.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/dp-pf.png",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm a global citizen focused on betterment of the world.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -49,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a therapy AI agent for people in love.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,35 +74,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Industry-Specific Layoff Tracker",
+    des: "Designed an automated data scraping pipeline that processed over 208,584 records from Reddit and 4chan, leveraging MongoDB for storage, Faktory workers for concurrency, and Flask APIs for real-time insights. Implemented toxicity detection with 98% accuracy, sentiment analysis using NLTK, and interactive visualizations with Matplotlib and Plotly. Enabled actionable insights into unemployment trends, achieving 30% efficiency gains through python data crawlers and historical data integration",
+    img: "/ind.png",
+    iconLists: ["/pyth.svg", "/flask.svg", "/mongo.svg"],
+    link: "https://github.com/ron103/industry-specific-layoff-tracker",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Clockin - A Time Tracking Tool",
+    des: "Developed Clockin – a cross-platform time tracking solution for iOS and watchOS using SwiftUI and WatchKit. Engineered a robust clock-in/clock-out system with real-time visual analytics that tracks work time, break time, and earnings based on a configurable hourly rate (default $15/hr) and daily goal (6 hours). Leveraging an MVVM architecture with shared code across platforms.",
+    img: "/clk.png",
+    iconLists: ["/swift.svg", "/tail.svg", "/ts.svg"],
+    link: "https://github.com/ron103/clockin",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Detection of Tuberculosis using Transfer Learning",
+    des: "Led a team to evaluate InceptionV3, EfficientNetB3, DenseNet201, and ResNet50 for TB detection via chest X-rays, achieving 90.95% accuracy on the TBX11K dataset, aiding 2.4M+ diagnoses nationwide.",
+    img: "/tb.png",
+    iconLists: ["/tf.svg", "/pyth.svg"],
+    link: "https://github.com/ron103/Detection-of-Tuberculosis-using-Transfer-Learning/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Wallet-io",
+    des: "Designed a TypeScript/React financial dashboard featuring 9+ Recharts/Material UI for Profit, Revenue, and Loss, indicating 4% growth and coded backend with Node.js, Express.js, and MongoDB, using machine learning to predict 12% growth.",
+    img: "/wall.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mongo.svg"],
+    link: "https://wallet-io.vercel.app",
   },
 ];
 
@@ -173,29 +175,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Backend Engineer Intern",
+    position: "Flow - July 2024 to August 2024",
+    desc: "Optimized Django backend applications by implementing efficient query handling and code refactoring, significantly reducing API response times. Designed a robust data pipeline to integrate Crunchbase, PitchBook, and LinkedIn feeds into PostgreSQL, ensuring data consistency through rigorous schema validation. Additionally, streamlined development workflows by applying object-oriented principles to refactor legacy code and deploying Docker-containerized applications, enhancing scalability and maintainability within a SCRUM environment.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Software Engineer (Part-Time)",
+    position: "Binghamton Tech Collective - August 2024 to Present",
+    desc: "Developed the official club website in React.js with real-time updates in Firebase, improving user engagement by 15% based on user surveys and increasing member interactions. Optimized a Node.js mock e-commerce platform by implementing caching strategies, reducing server response bottlenecks and enhancing load times. Increased accessibility by porting key web features into a Swift-based iOS app, ensuring seamless cross-platform availability. Additionally, contributed to Agile/SCRUM ceremonies and utilized GitHub for version control, ensuring on-time project milestones and efficient team collaboration.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Research Assitant",
+    position: "Prof. Nancy Guo (Binghamton University) - Jan 2025 to Present",
+    desc: "Developing deep learning models using CNNs and transfer learning for medical image analysis, optimizing medicine applications.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Research Assistant",
+    position: "Dr. Rajesh Prasad (MIT ADT University) - Aug 2022 to May 2023",
+    desc: "Performed and published a comparative study of detection of tuberculosis using machine learning and deep learning.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +211,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/ron103", // Replace with your actual GitHub link
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/inst.svg",
+    link: "https://instagram.com/rohannwaghmare", // Replace with your actual Twitter link
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://linkedin.com/in/rohanwaghmare", // Replace with your actual LinkedIn link
   },
 ];

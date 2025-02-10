@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-
+const resumeLink = "/resume.pdf";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -42,8 +42,8 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
+            Bringing Ideas to Life—One Line of Code at a Time.
           </p>
 
           {/**
@@ -52,21 +52,25 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Rohan Waghmare."
+            className="text-center text-[40px] md:text-5xl lg:text-7xl mb-1 md:mb-2 lg:mb-3"
           />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <TextGenerateEffect
+            words="Persistence. Perseverance. Proficiency"
+            className="text-center text-[15px] md:text-xl lg:text-2xl -mt-7 md:-mt-7 lg:-mt-7 mb-1 md:mb-2 lg:mb-3"
+          />
+          <p className="max-w-90 text-center md:tracking-wider mb-4 text-sm md:text-sm lg:text-lg">
+            I&apos;m a problem solver at heart, turning complex challenges into
+            streamlined solutions. With every project, I aim to bridge the gap
+            between technology and impact.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <MagicButton
+            title="View My Resume"
+            icon={<FaLocationArrow />}
+            position="right"
+            resumeUrl={resumeLink} // Pass the resume URL here
+          />
         </div>
       </div>
     </div>
